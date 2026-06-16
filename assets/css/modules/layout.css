@@ -5,7 +5,7 @@
         .main-wrapper {
             max-width: 1724px;
             margin: 0 auto;
-            background-color: #ffffff;
+            background-color: #FFFAF5;
             position: relative;
             overflow-x: hidden;
         }
@@ -14,7 +14,7 @@
             max-width: 1559px;
             width: 100%;
             margin: 0 auto;
-            padding: 0 40px; /* Safe padding for smaller screens */
+            /* Safe padding for smaller screens */
         }
 
         @media (max-width: 768px) {
