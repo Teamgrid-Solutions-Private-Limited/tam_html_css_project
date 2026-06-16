@@ -1,0 +1,70 @@
+  .site-header {
+            background-color: #ffffff;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 38px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            line-height: 1;
+            /* Custom styling to match 'tam' logo slightly */
+            font-family: "Arial Black", "Impact", sans-serif; 
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        .main-nav a {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: #333;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            font-weight: 700;
+            color: #000;
+        }
+        
+        .main-nav a.active {
+            border-bottom-color: #000; /* Indicator for active page as seen on 'METOD' */
+        }
+
+        .lang-switch {
+            font-size: 12px;
+            color: #666;
+            letter-spacing: 0.5px;
+        }
+
+        .lang-switch a {
+            font-weight: 400;
+        }
+
+        .lang-switch a.active {
+            font-weight: 700;
+            color: #000;
+        }
+
+        /* Mobile Nav Hidden for simplicity in this mockup, 
+           would require JS toggle in production */
+        @media (max-width: 1024px) {
+            .main-nav { display: none; }
+        }

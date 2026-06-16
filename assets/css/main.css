@@ -1,0 +1,24 @@
+@import url("./modules/layout.css");
+@import url("./modules/header.css");
+@import url("./modules/hero.css");
+@import url("./modules/testimonial.css");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PP Agrandir", sans-serif;
+  color: #000;
+  background-color: #f5f5f5; /* Light background outside the wrapper */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+

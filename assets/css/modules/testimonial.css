@@ -1,0 +1,67 @@
+/* ==========================================================================
+           TESTIMONIAL DIVIDER MODULE (assets/css/testimonial.css)
+           ========================================================================== */
+        .testimonial-module {
+            /* * Configurable background color via CSS variable.
+             * You can change this inline on the HTML element or override in a class.
+             */
+            --module-bg-color: #f7e6e5; /* Default pinkish color from design */
+            background-color: var(--module-bg-color);
+            padding: 120px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .testimonial-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .testimonial-text {
+            /* Can be h1, h2, h3 depending on SEO needs. Used h2 here. */
+            font-size: clamp(32px, 5vw, 64px);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            color: #000;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .testimonial-author {
+            font-size: clamp(16px, 2vw, 22px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            gap: 6px;
+        }
+
+        .author-name {
+            font-weight: 700;
+            color: #000;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            text-decoration-thickness: 2px;
+            transition: color 0.2s ease;
+        }
+
+        .author-name:hover {
+            color: #555;
+        }
+
+        .author-title {
+            font-weight: 400;
+            color: #333;
+        }
+
+        .author-separator {
+            margin: 0 4px;
+            color: #666;
+            font-weight: 300;
+        }
+ 

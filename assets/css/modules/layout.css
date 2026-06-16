@@ -1,0 +1,22 @@
+  /* * Requested Wrappers
+         * Main wrapper: max-width 1724px
+         * Container (inner): max-width 1559px
+         */
+        .main-wrapper {
+            max-width: 1724px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1559px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px; /* Safe padding for smaller screens */
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 20px; }
+        }
