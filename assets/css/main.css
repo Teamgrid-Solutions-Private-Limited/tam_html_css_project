@@ -10,6 +10,119 @@
   padding: 0;
 }
 
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Black.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-BlackItalic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Bold.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-BoldItalic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Heavy.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-HeavyItalic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-HeavyItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Italic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Light.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-LightItalic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Medium.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-MediumItalic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Regular.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-Thin.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-Thin.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Agrandir';
+    src: url('../fonts/PPAgrandir/PPAgrandir-ThinItalic.woff2') format('woff2'),
+         url('../fonts/PPAgrandir/PPAgrandir-ThinItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+
 body {
   font-family: "PP Agrandir", sans-serif;
   color: #000;
