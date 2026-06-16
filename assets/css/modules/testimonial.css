@@ -1,4 +1,4 @@
-/* ==========================================================================
+/* ========================================================================== 
    TESTIMONIAL DIVIDER MODULE (assets/css/testimonial.css)
    ========================================================================== */
 
@@ -29,16 +29,17 @@
   text-align: center;
   font-style: normal;
   line-height: normal;
-
 }
 
 .testimonial-inner > div {
   font-size: clamp(16px, 2vw, 24px);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
   align-items: baseline;
   gap: 6px;
+  padding-right: 30px;
 }
 
 .testimonial-inner > div > a {
@@ -63,4 +64,41 @@
   margin: 0 4px;
   color: #666;
   font-weight: 300;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .testimonial-module {
+    padding: 80px 24px;
+  }
+
+  .testimonial-inner {
+    gap: 20px;
+  }
+
+  .testimonial-inner > div {
+    justify-content: center;
+    padding-right: 0; /* remove right padding */
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .testimonial-module {
+    padding: 60px 16px;
+    margin-top: 24px;
+  }
+
+  .testimonial-inner h2 {
+    font-size: clamp(24px, 8vw, 32px);
+    line-height: 1.3;
+  }
+
+  .testimonial-inner > div {
+    font-size: 16px;
+    justify-content: center;
+    padding-right: 0; /* remove right padding */
+    gap: 4px;
+  }
 }
