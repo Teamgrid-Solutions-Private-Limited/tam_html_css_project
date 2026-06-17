@@ -1,0 +1,338 @@
+.about {
+    padding: 80px 0 120px;
+}
+
+.about__inner {
+    max-width: 1382px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    margin-bottom: 100px;
+
+    color: #000;
+    text-align: center;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.about__content {
+    margin-bottom: 100px;
+}
+
+.about__content p {
+    color: #000;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 65px;
+}
+.about__bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 540px; /* adjust as needed */
+}
+.about__contact h3 {
+    margin-bottom: 20px;
+
+    color: #000;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 65px;
+}
+
+.about__contact ul {
+    list-style: square;
+    padding-left: 30px;
+}
+
+.about__contact li {
+    color: #000;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 65px;
+}
+
+.about__contact a {
+    color: #000;
+    text-decoration-line: underline;
+}
+
+.about__logo svg {
+    width: 288px;
+    height: 110.644px;
+}
+
+.about__logo path {
+    fill: #030402;
+}
+
+.offices {
+    padding: 120px 0;
+}
+
+.offices__inner {
+    max-width: 1382px;
+    margin: 0 auto;
+}
+
+.offices__header {
+    width: 187px;
+    height: 32px;
+
+    background: #F5D6D7;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.offices__header span {
+    padding-left: 12px;
+
+    color: #000;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.offices__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 100px;
+    column-gap: 527px;
+}
+
+.office-card h3 {
+    margin-bottom: 36px;
+
+    color: #000;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.office-card p,
+.office-card a {
+    display: block;
+
+    color: #000;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 65px;
+}
+
+.office-card a {
+    text-decoration: underline;
+}
+
+.service-card__body a {
+    display: inline-block;
+    margin-top: 12px;
+
+    color: #030402;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 65px;
+
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1199px) {
+
+    .about {
+        padding: 80px 0 100px;
+    }
+
+    .about h2 {
+        margin-bottom: 80px;
+        font-size: 56px;
+    }
+
+    .about__content p {
+        font-size: 28px;
+        line-height: 1.8;
+    }
+
+    .about__contact h3,
+    .about__contact li {
+        font-size: 28px;
+        line-height: 1.8;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+    .about h2 {
+        margin-bottom: 70px;
+        font-size: 48px;
+    }
+
+    .about__content {
+        margin-bottom: 80px;
+    }
+
+    .about__content p {
+        font-size: 24px;
+        line-height: 1.8;
+    }
+
+    .about__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 70px;
+    }
+
+    .about__contact h3,
+    .about__contact li {
+        font-size: 24px;
+        line-height: 1.8;
+    }
+
+    .about__logo {
+        align-self: center;
+    }
+
+    .about__logo svg {
+        width: 240px;
+        height: auto;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .about {
+        padding: 60px 0 80px;
+    }
+
+    .about h2 {
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .about__content {
+        margin-bottom: 60px;
+    }
+
+    .about__content p {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .about__contact h3 {
+        margin-bottom: 15px;
+
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    .about__contact li {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    .about__contact ul {
+        padding-left: 20px;
+    }
+
+    .about__logo {
+        align-self: center;
+    }
+
+    .about__logo svg {
+        width: 180px;
+        height: auto;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about__content p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .about__contact h3 {
+        font-size: 20px;
+    }
+
+    .about__contact li {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .about__logo svg {
+        width: 150px;
+    }
+
+}
+@media (max-width: 991px) {
+
+    .offices__grid {
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .offices {
+        padding: 80px 0;
+    }
+
+    .offices__header {
+        margin-bottom: 60px;
+    }
+
+    .office-card h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .office-card p,
+    .office-card a {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+}
