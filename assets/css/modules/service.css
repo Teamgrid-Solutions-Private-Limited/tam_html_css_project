@@ -1,0 +1,167 @@
+/* ===== SECTION HEADING ===== */
+
+.services__heading {
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+    color: #000;
+    text-align: center;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+/* ===== GROUP LABEL ===== */
+
+.services-group__label {
+    display: block;
+    margin-bottom: 48px;
+
+    color: #000;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+/* ===== GRID ===== */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 64px 40px;
+}
+
+/* ===== SERVICE CARD ===== */
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image */
+
+.service-card__image {
+    width: 100%;
+    aspect-ratio: 83 / 60;
+    overflow: hidden;
+}
+
+.service-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Title */
+
+.service-card__title {
+    padding-top: 16px;
+    padding-bottom: 12px;
+
+    color: #030402;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Description */
+
+.service-card__description {
+    color: #000;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* ===== TESTIMONIAL CARD ===== */
+
+.testimonial-card {
+    grid-column: span 2;
+
+    background: #F5D6D7;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    padding: 48px 60px;
+
+    box-sizing: border-box;
+}
+
+/* Left Content */
+
+.testimonial-card__content {
+    flex: 1;
+}
+
+/* Quote */
+
+.testimonial-card__quote {
+    max-width: 590px;
+
+    color: #000;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 25px;
+}
+
+.testimonial-card__name {
+    color: #030402;
+    font-family: "PP Agrandir", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-bottom: 8px;
+}
+
+.testimonial-card__position {
+    color: #000;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+}
+/* Image */
+.testimonial-card {
+    grid-column: span 2;
+    background: #F5D6D7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 88px 0 65px;
+    overflow: visible;
+}
+
+.testimonial-card__image {
+    width: 280px;
+    height: 280px;   /* same as width */
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.testimonial-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* zoom */
+    transform: scale(1.7);
+
+    /* move image right and down */
+    object-position: 115% 40%; 
+
+    display: block;
+}

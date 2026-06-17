@@ -2,6 +2,7 @@
 @import url("./modules/header.css");
 @import url("./modules/hero.css");
 @import url("./modules/testimonial.css");
+@import url("./modules/service.css");
 *,
 *::before,
 *::after {
@@ -13,7 +14,7 @@
 body {
   font-family: "PP Agrandir", sans-serif;
   color: #000;
-  background-color: #f5f5f5; /* Light background outside the wrapper */
+  background-color: #FFFAF3; /* Light background outside the wrapper */
 }
 
 a {
