@@ -1,167 +1,252 @@
-/* ===== SECTION HEADING ===== */
+/* ==========================================
+   SERVICES SECTION
+========================================== */
 
-.services__heading {
-    padding-top: 80px;
-    padding-bottom: 60px;
+.container h2 {
+  padding-top: 80px;
+  margin-bottom: 60px;
 
-    color: #000;
-    text-align: center;
-    font-family: "PP Agrandir", sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 48px;
+  color: #000;
+  text-align: center;
+  font-family: "PP Agrandir", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-/* ===== GROUP LABEL ===== */
+/* ==========================================
+   SERVICE GROUP
+========================================== */
 
-.services-group__label {
-    display: block;
-    margin-bottom: 48px;
-
-    color: #000;
-    font-family: "PP Agrandir", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 48px;
-    text-transform: uppercase;
+.services-group {
+  margin-bottom: 90px;
 }
 
-/* ===== GRID ===== */
+.services-group__header {
+  margin-bottom: 40px;
+}
+
+.services-group__header span {
+  display: flex;
+  align-items: center;
+
+  width: 290px;
+  height: 40px;
+
+  padding: 0 16px;
+
+  background: #f5d6d7;
+
+  color: #000;
+  font-family: "PP Agrandir", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+}
+/* ==========================================
+   GRID
+========================================== */
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 64px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 40px;
+  row-gap: 70px;
 }
 
-/* ===== SERVICE CARD ===== */
+/* ==========================================
+   SERVICE CARD
+========================================== */
 
 .service-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Image */
-
 .service-card__image {
-    width: 100%;
-    aspect-ratio: 83 / 60;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1.25;
 }
 
 .service-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* Title */
-
-.service-card__title {
-    padding-top: 16px;
-    padding-bottom: 12px;
-
-    color: #030402;
-    font-family: "PP Agrandir", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: normal;
+.service-card__body {
+  padding-top: 16px;
 }
 
-/* Description */
+/* ==========================================
+   TITLE
+========================================== */
 
-.service-card__description {
-    color: #000;
-    font-family: "Akzidenz-Grotesk BQ", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
+.service-card__body h3 {
+  margin-bottom: 12px;
+
+  color: #030402;
+  font-family: "PP Agrandir", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
-/* ===== TESTIMONIAL CARD ===== */
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.service-card__body p {
+  max-width: 90%;
+
+  color: #000;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ==========================================
+   TESTIMONIAL CARD
+========================================== */
 
 .testimonial-card {
-    grid-column: span 2;
+  grid-column: span 2;
 
-    background: #F5D6D7;
+  background: #f5d6d7;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding: 48px 60px;
+  gap: 40px;
 
-    box-sizing: border-box;
+  padding: 25px 88px 0 65px;
+
+  overflow: visible;
 }
-
-/* Left Content */
 
 .testimonial-card__content {
-    flex: 1;
+  flex: 1;
 }
 
-/* Quote */
-
 .testimonial-card__quote {
-    max-width: 590px;
+  max-width: 590px;
 
-    color: #000;
-    font-family: "PP Agrandir", sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: normal;
+  margin-bottom: 25px;
 
-    margin-bottom: 25px;
+  color: #000;
+  font-family: "PP Agrandir", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .testimonial-card__name {
-    color: #030402;
-    font-family: "PP Agrandir", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: normal;
+  margin-bottom: 8px;
 
-    margin-bottom: 8px;
+  color: #030402;
+  font-family: "PP Agrandir", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .testimonial-card__position {
-    color: #000;
-    font-family: "Akzidenz-Grotesk BQ", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 35px;
-}
-/* Image */
-.testimonial-card {
-    grid-column: span 2;
-    background: #F5D6D7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 88px 0 65px;
-    overflow: visible;
+  color: #000;
+  font-family: "Akzidenz-Grotesk BQ", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
 }
 
+/* ==========================================
+   TESTIMONIAL IMAGE
+========================================== */
+
 .testimonial-card__image {
-    width: 280px;
-    height: 280px;   /* same as width */
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  flex-shrink: 0;
 }
 
 .testimonial-card__image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
 
-    /* zoom */
-    transform: scale(1.7);
+  object-fit: cover;
 
-    /* move image right and down */
-    object-position: 115% 40%; 
+  transform: scale(1.7);
 
-    display: block;
+  object-position: 115% 40%;
+
+  display: block;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-card {
+    grid-column: span 2;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+  .container h2 {
+    font-size: 48px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .service-card__body h3 {
+    font-size: 28px;
+  }
+
+  .service-card__body p {
+    font-size: 20px;
+  }
+
+  .testimonial-card {
+    grid-column: span 1;
+
+    flex-direction: column;
+
+    padding: 40px 30px;
+  }
+
+  .testimonial-card__image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .testimonial-card__quote {
+    font-size: 28px;
+  }
+
+  .testimonial-card__name,
+  .testimonial-card__position {
+    font-size: 20px;
+  }
 }

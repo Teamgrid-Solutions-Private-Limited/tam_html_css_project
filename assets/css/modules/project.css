@@ -1,0 +1,38 @@
+.services-filter {
+    width: 1552px;
+    height: 47px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    margin: 0 auto 80px;
+}
+
+.services-filter a {
+    color: #000;
+    text-align: center;
+    font-family: "Akzidenz-Grotesk BQ", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.services-filter a.active {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: 8px;
+}
+
+.services-filter a:hover {
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
