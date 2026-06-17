@@ -1,0 +1,84 @@
+/* ==========================================================================
+   TWO COLUMN SECTION
+   ========================================================================== */
+
+.two-column-section {
+  padding: 120px 40px;
+  background: #faf9f6;
+}
+
+.two-column-title {
+  text-align: center;
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.two-column-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.two-column-content h3 {
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+.two-column-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 24px;
+}
+
+.two-column-text p:last-child {
+  margin-bottom: 40px;
+}
+
+.two-column-button {
+  display: inline-block;
+  padding: 12px 40px;
+  border: 1px solid #000;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.two-column-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.two-column-image {
+  width: 100%;
+}
+
+.two-column-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .two-column-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .two-column-title {
+    margin-bottom: 50px;
+  }
+}

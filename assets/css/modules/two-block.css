@@ -59,29 +59,44 @@
         }
 
         .service-content h3 {
-            font-size: 24px;
+            color: #030402;
+            font-size: 30px;
             font-weight: 700;
             letter-spacing: -0.5px;
             margin-bottom: 12px;
         }
 
         .service-content p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
+            font-size: 24px;
+            font-family: "Akzidenz-Grotesk BQ";
+
+            line-height: normal;
+            color: #000;
             margin-bottom: 24px;
         }
 
         .read-more {
-            font-size: 14px;
-            font-weight: 700;
-            color: #000;
+            font-size: 18px;
+            
+           
             text-decoration: none;
             /* The magic trick to align bottoms regardless of text length: */
             margin-top: auto; 
             align-self: flex-start;
-            text-underline-offset: 4px;
-            text-decoration-thickness: 2px;
+           
+
+            color: #030402;
+font-family: AkzidenzGrotesk;
+
+font-style: normal;
+font-weight: 900;
+line-height: 65px; /* 361.111% */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
         }
 
         /* The Read More underscore comes when hover */
