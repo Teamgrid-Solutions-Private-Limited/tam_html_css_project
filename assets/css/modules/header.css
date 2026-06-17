@@ -1,70 +1,76 @@
-  .site-header {
-            background-color: #ffffff;
-            height: 90px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
+.site-header {
+  background-color: #ffffff;
+  height: 71px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0 40px;
+}
 
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-        }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 
-        .logo {
-            font-size: 38px;
-            font-weight: 700;
-            letter-spacing: -2px;
-            line-height: 1;
-            /* Custom styling to match 'tam' logo slightly */
-            font-family: "Arial Black", "Impact", sans-serif; 
-        }
+.logo {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+  font-family: "Arial Black", "Impact", sans-serif;
+}
 
-        .main-nav {
-            display: flex;
-            gap: 50px;
-        }
+.main-nav {
+  display: flex;
+  gap: 50px;
+}
 
-        .main-nav a {
-            font-size: 12px;
-            text-transform: uppercase;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            color: #333;
-            padding-bottom: 4px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s ease;
-        }
+/* Directly target links inside nav */
+.main-nav a {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  transition: all 0.2s ease;
+  color: #030402;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-        .main-nav a:hover,
-        .main-nav a.active {
-            font-weight: 700;
-            color: #000;
-        }
-        
-        .main-nav a.active {
-            border-bottom-color: #000; /* Indicator for active page as seen on 'METOD' */
-        }
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  font-weight: 700;
+  color: #000;
+}
 
-        .lang-switch {
-            font-size: 12px;
-            color: #666;
-            letter-spacing: 0.5px;
-        }
+.main-nav a[aria-current="page"] {
+  border-bottom-color: #000;
+}
 
-        .lang-switch a {
-            font-weight: 400;
-        }
+.lang-switch {
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 0.5px;
+}
 
-        .lang-switch a.active {
-            font-weight: 700;
-            color: #000;
-        }
+/* Directly target links inside lang-switch */
+.lang-switch a {
+  font-weight: 400;
+}
 
-        /* Mobile Nav Hidden for simplicity in this mockup, 
-           would require JS toggle in production */
-        @media (max-width: 1024px) {
-            .main-nav { display: none; }
-        }
+.lang-switch a:first-child {
+  font-weight: 700;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .main-nav {
+    display: none;
+  }
+}

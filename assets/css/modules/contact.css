@@ -1,0 +1,127 @@
+.contact-module {
+            padding: 120px 0;
+            background-color: #FFFAF3;
+        }
+ 
+        .contact-title {
+            color: #030402;
+            text-align: center;
+            font-size: clamp(40px, 5vw, 64px);
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-bottom: 40px;
+        }
+ 
+        .contact-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+ 
+        .filter-btn {
+            font-family: "Akzidenz-Grotesk BQ";
+            background: none;
+            border: none;
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #333;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+ 
+        .filter-btn:hover,
+        .filter-btn.active {
+            font-weight: 700;
+            color: #000;
+        }
+ 
+        .filter-btn.active {
+            border-bottom-color: #000;
+        }
+ 
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 60px;
+            row-gap: 80px;
+        }
+ 
+        @media (max-width: 992px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 40px;
+            }
+        }
+ 
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+ 
+        .team-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /* Animation for filtering */
+            animation: fadeIn 0.4s ease-in-out;
+        }
+ 
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+ 
+        .team-photo-wrapper {
+            width: 100%;
+            max-width: 466px;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 24px;
+            background-color: #e0e0e0;
+        }
+ 
+        .team-photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Added grayscale effect that turns color on hover for a premium feel */
+            filter: grayscale(100%);
+            transition: filter 0.4s ease, transform 0.4s ease;
+        }
+ 
+        .team-card:hover .team-photo-wrapper img {
+            filter: grayscale(0%);
+            transform: scale(1.03);
+        }
+ 
+        .team-card h3 {
+            color: #030402;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+ 
+        .team-details {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #000;
+        }
+ 
+        .team-details a {
+            text-decoration: none;
+            transition: color 0.2s;
+            color: #000;
+        }
+ 
+        .team-details a:hover {
+            text-decoration: underline;
+        }

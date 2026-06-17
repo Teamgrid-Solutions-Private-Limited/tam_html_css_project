@@ -44,165 +44,72 @@
           </div>
         </div>
       </header>
-
-      <!-- HERO MODULE -->
-<section class="hero-banner-section">
-  <div class="hero-banner-wrapper">
-
-    <div class="hero-banner-image">
-      <img src="./assets/images/Skärmavbild 2026-05-19 kl. 13.22.43 2.svg" alt="Hero Banner">
-    </div>
-
-    <div class="hero-banner-overlay">
-      <div class="hero-banner-content">
-        <div class="hero-banner-title">
-          Där historia <br>
-          möter framtid
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-      <!-- TESTIMONIAL TITLE MODULE -->
-     
-   <section class="testimonial-module">
-    <div class="testimonial-inner">
-
-        <h2>
-            “Spaces of light, clarity, and connection, shaped with intention.”
-        </h2>
-
-        <div>
-            <a href="mailto:andreas.philipson@tamgroup.se">
-                Andreas Philipson
-            </a>
-
-            <span>|</span>
-
-            <span>
-                Partner & Senior Rådgivare  
-            </span>
-        </div>
-
-    </div>
-</section>
-
-<!-- //two block -->
-   <!-- TWO COLUMN SERVICES MODULE -->
-        <section class="services-module">
+<!-- CONTACT MODULE -->
+        <section class="contact-module">
             <div class="container">
-                <h2 class="services-title">Våra tjänster</h2>
-                
-                <div class="services-grid">
+                <h2 class="contact-title">Kontakt</h2>
+               
+                <!-- Filter Navigation -->
+                <div class="contact-filters">
+                    <button class="filter-btn active" data-filter="all">VISA ALLA</button>
+                    <button class="filter-btn" data-filter="asset">ASSET MANAGEMENT</button>
+                    <button class="filter-btn" data-filter="retail">RETAIL</button>
+                    <button class="filter-btn" data-filter="development">DEVELOPMENT</button>
+                    <button class="filter-btn" data-filter="sustainability">SUSTAINABILITY</button>
+                </div>
+ 
+                <div class="team-grid" id="team-grid">
+                   
+                    <!-- Team Member 1 -->
+                    <!-- The data-category holds the tags for the JS filter -->
+                    <div class="team-card" data-category="asset development">
+                        <div class="team-photo-wrapper">
+                            <img src="./assets/images/contactImage1.jpg" alt="Andreas Philipson">
+                        </div>
+                        <h3 >Andreas Philipson</h3>
+                        <div class="team-details">
+                            Partner & Senior Rådgivare<br>
+                            Fastighetsexpert, projektledare<br>
+                            <a href="tel:+46702097760">+46 (0) 70 209 77 60</a><br>
+                            <a href="mailto:andreas.philipson@tamgroup.se">andreas.philipson@tamgroup.se</a>
+                        </div>
+                    </div>
+ 
+                    <!-- Team Member 2 -->
+                    <div class="team-card" data-category="retail asset">
+                        <div class="team-photo-wrapper">
+                            <img src="./assets/images/contactImage1.jpg" alt="Anna Edlund">
+                        </div>
+                        <h3 class="team-name">Anna Edlund</h3>
+                        <div class="team-details">
+                            Operativt ansvarig TAM Norr<br>
+                            Fastighetsexpert, projektledare<br>
+                            <a href="tel:+46738010615">+46 (0) 73 801 06 15</a><br>
+                            <a href="mailto:anna.edlund@tamgroup.se">anna.edlund@tamgroup.se</a>
+                        </div>
+                    </div>
+ 
+                    <!-- Team Member 3 -->
+                    <div class="team-card" data-category="retail">
+                        <div class="team-photo-wrapper">
+                            <img src="./assets/images/contactImage1.jpg" alt="Anna K Johansson">
+                        </div>
+                        <h3 class="team-name">Anna K Johansson</h3>
+                        <div class="team-details">
+                            Senior Uppdragsledare Retail<br>
+                            Fastighetsexpert, projektledare<br>
+                            <a href="tel:+46702749966">+46 (0) 70 274 99 66</a><br>
+                            <a href="mailto:anna.johansson@tamgroup.se">anna.johansson@tamgroup.se</a>
+                        </div>
+                    </div>
+                   
                     
-                    <!-- Card 1 -->
-                    <div class="service-card">
-                        <a href="#" class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Investeringsrådgivning">
-                        </a>
-                        <div class="service-content">
-                            <h3>Investeringsrådgivning</h3>
-                            <p>Vi erbjuder rådgivning vid fastighetsinvesteringar med fokus på potential, läge och långsiktigt värde. Målet är att skapa välgrundade beslut och hållbar avkastning.</p>
-                            <a href="#" class="read-more">Läs mer</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="service-card">
-                        <a href="#" class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Hållbarhet">
-                        </a>
-                        <div class="service-content">
-                            <h3>Hållbarhet</h3>
-                            <p>Vi ser hållbarhet som en naturlig del av varje fastighetsprojekt. Genom innovation och långsiktigt tänkande bidrar vi till miljöer som fungerar idag och i framtiden.</p>
-                            <a href="#" class="read-more">Läs mer</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="service-card">
-                        <a href="#" class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Projektuthyrning">
-                        </a>
-                        <div class="service-content">
-                            <h3>Projektuthyrning</h3>
-                            <p>Vi hjälper fastighetsägare att hitta rätt hyresgäster till rätt plats. Med förståelse för marknad, målgrupp och koncept skapar vi starka matchningar.</p>
-                            <a href="#" class="read-more">Läs mer</a>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="service-card">
-                        <a href="#" class="service-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Platsutveckling">
-                        </a>
-                        <div class="service-content">
-                            <h3>Platsutveckling</h3>
-                            <p>Vi utvecklar platser med långsiktighet, identitet och människor i fokus. Genom att kombinera strategi, innehåll och sammanhang skapar vi miljöer som lever över tid.</p>
-                            <a href="#" class="read-more">Läs mer</a>
-                        </div>
-                    </div>
-
+ 
                 </div>
             </div>
         </section>
-<section class="featured-story-section">
-  <div class="container">
+ 
 
-    <div class="featured-story-image">
-      <img src="./assets/images/featured-image.jpg" alt="Story Image">
-    </div>
-
-    <div class="featured-story-content">
-      <div class="featured-story-title">
-        Så skapade vi Stureplans nya mötesplats
-      </div>
-
-      <div class="featured-story-description">
-        När du checkar in blir du omedelbart påmind om hotellets historia - ett
-        f.d. bankpalats som nu fått en djärv och levande inredning. Och bara en
-        kort promenad från Stockholms exklusivaste shoppingstråk, nattliv och
-        kulturella attraktioner.
-      </div>
-
-      <div class="featured-story-button">
-        <a href="#" class="story-btn">Läs mer</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section class="sustainability-section">
-  <div class="sustainability-wrapper container">
-
-    <div class="sustainability-image">
-      <img src="./assets/images/imagecontentbanner.png" alt="Sustainability">
-    </div>
-
-    <div class="sustainability-content">
-      <div class="sustainability-title">
-        Vår hållbarhetsresa och vision för att nå fram till våra klimatmål
-      </div>
-
-      <div class="sustainability-description">
-        När du checkar in blir du omedelbart påmind om hotellets historia - ett
-        f.d. bankpalats som nu fått en djärv och levande inredning. Och bara en
-        kort promenad från Stockholms exklusivaste shoppingstråk, nattliv och
-        kulturella attraktioner.
-      </div>
-
-      <div class="sustainability-download">
-        <a href="#">
-          Ladda ner vår hållbarhetsrapport här
-         
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 <footer class="footer-section">
   <div class="main-wrapper footer-container">
@@ -260,3 +167,4 @@
     </div>
   </body>
 </html>
+
